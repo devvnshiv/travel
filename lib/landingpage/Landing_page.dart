@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:travel/landingpage/Widgets/Text_widgets.dart';
 import 'package:travel/landingpage/Widgets/appbar.dart';
 import 'package:travel/landingpage/Widgets/bottombar.dart';
+import 'package:travel/landingpage/Widgets/bottomnav.dart';
 import 'package:travel/landingpage/Widgets/gridlist.dart';
 import 'package:travel/landingpage/Widgets/searchbar.dart';
 import 'package:travel/landingpage/Widgets/tab.dart';
@@ -21,6 +22,7 @@ class _Landing_PageState extends State<Landing_Page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: bottom(),
       floatingActionButton: FloatingActionButton(
 
         backgroundColor:Colors.orange ,
@@ -34,37 +36,38 @@ class _Landing_PageState extends State<Landing_Page> {
         onPressed: () {  },
 
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
 
       backgroundColor: Colors.white,
 
-      body: Column(
-        children: [
-          SizedBox(height: 1.1*AppSizeConfig.heightMultiplier!,),
-          Appbars(),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            SizedBox(height: 1.1*AppSizeConfig.heightMultiplier!,),
+            Appbars(),
 SizedBox(height: 2.5*AppSizeConfig.heightMultiplier!,),
 
-      Text_Widgets(text: "Explore",),
-          SizedBox(height: 1.0*AppSizeConfig.heightMultiplier!,),
-          Searchbar(),
-          SizedBox(height: 2.5*AppSizeConfig.heightMultiplier!,),
-          Tab_bar(),
-          SizedBox(height: 2.3*AppSizeConfig.heightMultiplier!,),
-          Textdetails(texts: "Hot Places"),
-          GridList(),
-          SizedBox(height: 0.8*AppSizeConfig.heightMultiplier!,),
-          Stack(
-            children: [
-              bottombar(),
-
-            ],
-          )
+        Text_Widgets(text: "Explore",),
+            SizedBox(height: 1.0*AppSizeConfig.heightMultiplier!,),
+            Searchbar(),
+            SizedBox(height: 2.5*AppSizeConfig.heightMultiplier!,),
+            Tab_bar(),
+            SizedBox(height: 2.3*AppSizeConfig.heightMultiplier!,),
+            Textdetails(texts: "Hot Places"),
+            GridList(),
 
 
 
 
 
-      ],
+
+
+
+
+
+
+        ],
+        ),
       ),
 
 

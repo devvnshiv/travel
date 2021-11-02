@@ -20,33 +20,35 @@ class _DetailsState extends State<Details> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
+      body: SingleChildScrollView(
+        child: Column(
 
-        children: [
-
-
-              Details_image(),
-          SizedBox(height: 1.2*AppSizeConfig.heightMultiplier!,),
-          Textdetails(texts: "About Place"),
-
-          place_text(),
-
-          Padding(
-            padding: const EdgeInsets.all(15.0),
-            child: Text_Widgets(text: "Gallery"),
-          ),
-          glallery_widgets(),
+          children: [
 
 
+                Details_image(),
+            SizedBox(height: 1.2*AppSizeConfig.heightMultiplier!,),
+            Textdetails(texts: "About Place"),
 
-          SizedBox(height: 7.1*AppSizeConfig.heightMultiplier!,),
+            place_text(),
 
-
-          Booking_widgets(),
+            Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: Text_Widgets(text: "Gallery"),
+            ),
+            glallery_widgets(),
 
 
 
-        ],
+            SizedBox(height: 8.4*AppSizeConfig.heightMultiplier!,),
+
+
+            Booking_widgets(),
+
+
+
+          ],
+        ),
       ),
     );
   }
