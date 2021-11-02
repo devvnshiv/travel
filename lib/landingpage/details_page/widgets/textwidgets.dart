@@ -15,7 +15,7 @@ class Textdetails extends StatelessWidget {
         children: [
           SizedBox(width: 4*AppSizeConfig.widthMultiplier!,),
           Text_Widgets(text: texts!),
-          SizedBox(width: 45*AppSizeConfig.widthMultiplier!,),
+          SizedBox(width: 40*AppSizeConfig.widthMultiplier!,),
           Text("See All", style: TextStyle(color:Colors.grey.shade600, fontSize:2.0*AppSizeConfig.textMultiplier! ),)
         ],
       ),

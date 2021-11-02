@@ -35,7 +35,7 @@ class _Booking_widgetsState extends State<Booking_widgets> {
   bookingbox(){
     return Container(
       height: 5.7*AppSizeConfig.heightMultiplier!,
-      width:30*AppSizeConfig.widthMultiplier! ,
+      width:26*AppSizeConfig.widthMultiplier! ,
 
       decoration: BoxDecoration(
           color: Colors.white,

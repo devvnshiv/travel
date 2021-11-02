@@ -40,21 +40,19 @@ class _Landing_PageState extends State<Landing_Page> {
 
       body: Column(
         children: [
-          SizedBox(height: 1.2*AppSizeConfig.heightMultiplier!,),
+          SizedBox(height: 1.1*AppSizeConfig.heightMultiplier!,),
           Appbars(),
 SizedBox(height: 2.5*AppSizeConfig.heightMultiplier!,),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text_Widgets(text: "Explore",),
-          ),
+
+      Text_Widgets(text: "Explore",),
           SizedBox(height: 1.0*AppSizeConfig.heightMultiplier!,),
           Searchbar(),
           SizedBox(height: 2.5*AppSizeConfig.heightMultiplier!,),
           Tab_bar(),
-          SizedBox(height: 2.5*AppSizeConfig.heightMultiplier!,),
+          SizedBox(height: 2.3*AppSizeConfig.heightMultiplier!,),
           Textdetails(texts: "Hot Places"),
           GridList(),
-          SizedBox(height: 2.7*AppSizeConfig.heightMultiplier!,),
+          SizedBox(height: 0.8*AppSizeConfig.heightMultiplier!,),
           Stack(
             children: [
               bottombar(),

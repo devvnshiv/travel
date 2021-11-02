@@ -21,7 +21,7 @@ class _DetailsState extends State<Details> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-crossAxisAlignment: CrossAxisAlignment.start,
+
         children: [
 
 
@@ -29,10 +29,8 @@ crossAxisAlignment: CrossAxisAlignment.start,
           SizedBox(height: 1.2*AppSizeConfig.heightMultiplier!,),
           Textdetails(texts: "About Place"),
 
-          Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: place_text(),
-          ),
+          place_text(),
+
           Padding(
             padding: const EdgeInsets.all(15.0),
             child: Text_Widgets(text: "Gallery"),
@@ -41,7 +39,7 @@ crossAxisAlignment: CrossAxisAlignment.start,
 
 
 
-          SizedBox(height: 5.6*AppSizeConfig.heightMultiplier!,),
+          SizedBox(height: 7.9*AppSizeConfig.heightMultiplier!,),
 
 
           Booking_widgets(),

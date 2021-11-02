@@ -7,7 +7,7 @@ class bottombar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 6*AppSizeConfig.heightMultiplier!,
+      height: 7.3*AppSizeConfig.heightMultiplier!,
       width: 100*AppSizeConfig.widthMultiplier!,
       color: Colors.grey.shade100,
       
