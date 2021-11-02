@@ -41,7 +41,7 @@ height: 40*AppSizeConfig.heightMultiplier!,
           ),
 
           Padding(
-            padding: const EdgeInsets.only(top: 280, left: 10),
+            padding:  EdgeInsets.only(top: 34*AppSizeConfig.heightMultiplier!, left: 10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

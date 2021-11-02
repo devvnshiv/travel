@@ -39,7 +39,7 @@ class _DetailsState extends State<Details> {
 
 
 
-          SizedBox(height: 7.9*AppSizeConfig.heightMultiplier!,),
+          SizedBox(height: 7.1*AppSizeConfig.heightMultiplier!,),
 
 
           Booking_widgets(),
